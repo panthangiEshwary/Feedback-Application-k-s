@@ -1,17 +1,18 @@
 <img width="1366" height="515" alt="image" src="https://github.com/user-attachments/assets/c4e66549-d936-47fb-a39d-dc8430c4592d" />
 
+
 **Project Name: Feedback Application (Three-Tier Kubernetes Deployment)**
 
-Objective: Collect, manage, and display user feedback in real-time using a containerized, scalable architecture.
+**Objective:** Collect, manage, and display user feedback in real-time using a containerized, scalable architecture.
 
-Key Features:
+**Key Features:**
 
 Submit feedback through a web interface
 Real-time updates via WebSocket (Socket.IO)
 Persistent storage in MySQL
 Deployment and orchestration using Kubernetes
 
-Project Architecture
+**Project Architecture**
 
 Three-Tier Architecture:
 
@@ -71,7 +72,7 @@ docker build -t feedback-backend ./backend
 # Frontend
 docker build -t feedback-frontend ./frontend
 
-Deploy to Kubernetes:
+**Deploy to Kubernetes:**
 kubectl apply -f k8s/00-namespace.yaml
 kubectl apply -f k8s/01-secrets.yaml
 kubectl apply -f k8s/02-configmap.yaml
@@ -83,16 +84,16 @@ kubectl apply -f k8s/06-ingress.yaml
 
 
 
-Verify Deployments:
+**Verify Deployments:**
 kubectl get pods -n feedback
 kubectl get svc -n feedback
 kubectl get ingress -n feedback
 
-Current Status
+**Current Status**
 Feedback submission is functional
 Real-time updates via WebSocket are working
 Kubernetes deployment tested on Minikube
 
-Conclusion
+**Conclusion**
 This project demonstrates the implementation of a scalable feedback collection system using a three-tier architecture and Kubernetes for orchestration. The modular design allows for easy scaling and maintenance, making it suitable for deployment in various environments.
 
