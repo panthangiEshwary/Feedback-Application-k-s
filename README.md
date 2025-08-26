@@ -1,4 +1,6 @@
-<img width="1366" height="515" alt="image" src="https://github.com/user-attachments/assets/c4e66549-d936-47fb-a39d-dc8430c4592d" />Project Name: Feedback Application (Three-Tier Kubernetes Deployment)
+<img width="1366" height="515" alt="image" src="https://github.com/user-attachments/assets/c4e66549-d936-47fb-a39d-dc8430c4592d" />
+
+**Project Name: Feedback Application (Three-Tier Kubernetes Deployment)**
 
 Objective: Collect, manage, and display user feedback in real-time using a containerized, scalable architecture.
 
