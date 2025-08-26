@@ -55,6 +55,8 @@ Frontend sends the feedback data to backend via REST API.
 Backend processes data and stores it in MySQL.
 Backend pushes real-time updates to all connected clients via WebSocket.
 Frontend updates feedback list dynamically.
+<img width="1366" height="468" alt="image" src="https://github.com/user-attachments/assets/e4ef9a63-bedd-49dd-955f-f34d606726fe" />
+
 
 Deployment Steps:
 
