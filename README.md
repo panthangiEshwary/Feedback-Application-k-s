@@ -16,24 +16,24 @@ Deployment and orchestration using Kubernetes
 
 Three-Tier Architecture:
 
-Frontend:
+**Frontend:**
 Files: frontend/app.js, index.html, styles.css
 Handles user interaction and sends feedback to backend APIs
 Dockerized with frontend/Dockerfile
 
-Backend:
+**Backend:**
 
 Files: backend/app.py, gunicorn.conf.py, requirements.txt
 Flask + Socket.IO API server
 Handles feedback storage and real-time updates
 Dockerized with backend/Dockerfile
 
-Database:
+**Database:**
 
 MySQL StatefulSet in Kubernetes (k8s/03-mysql-statefulset.yaml)
 Initialization via k8s/07-initdb-configmap.yaml
 
-Kubernetes Layer:
+**Kubernetes Layer:**
 
 Namespace: k8s/00-namespace.yaml
 Secrets: k8s/01-secrets.yaml
@@ -43,7 +43,7 @@ Frontend Deployment: k8s/frontend-deployment.yaml
 Ingress for external access: k8s/06-ingress.yaml
 
 
-Tech Stack
+**Tech Stack**
 
 Frontend: HTML, CSS, JavaScript
 Backend: Python Flask + Socket.IO
@@ -51,7 +51,7 @@ Database: MySQL
 Containerization: Docker
 Orchestration: Kubernetes (Deployments, Services, ConfigMaps, StatefulSets, Ingress)
 
-System Workflow
+**System Workflow**
 
 User submits feedback via frontend UI.
 Frontend sends the feedback data to backend via REST API.
@@ -63,9 +63,9 @@ Frontend updates feedback list dynamically.
 
 
 
-Deployment Steps:
+**Deployment Steps:**
 
-Build Docker Images:
+**Build Docker Images:**
 # Backend
 docker build -t feedback-backend ./backend
 
