@@ -56,6 +56,8 @@ Backend processes data and stores it in MySQL.
 Backend pushes real-time updates to all connected clients via WebSocket.
 Frontend updates feedback list dynamically.
 <img width="1366" height="468" alt="image" src="https://github.com/user-attachments/assets/e4ef9a63-bedd-49dd-955f-f34d606726fe" />
+<img width="1366" height="334" alt="image" src="https://github.com/user-attachments/assets/1bdfc081-b207-4f77-aa54-169ee5f74eae" />
+
 
 
 Deployment Steps:
