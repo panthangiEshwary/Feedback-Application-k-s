@@ -79,14 +79,18 @@ kubectl apply -f k8s/04-backend-deploy.yaml
 kubectl apply -f k8s/frontend-deployment.yaml
 kubectl apply -f k8s/06-ingress.yaml
 
+
+
 Verify Deployments:
 kubectl get pods -n feedback
 kubectl get svc -n feedback
 kubectl get ingress -n feedback
 
 Current Status
-
 Feedback submission is functional
 Real-time updates via WebSocket are working
 Kubernetes deployment tested on Minikube
+
+Conclusion
+This project demonstrates the implementation of a scalable feedback collection system using a three-tier architecture and Kubernetes for orchestration. The modular design allows for easy scaling and maintenance, making it suitable for deployment in various environments.
 
